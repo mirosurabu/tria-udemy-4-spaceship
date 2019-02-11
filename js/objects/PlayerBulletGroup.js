@@ -7,7 +7,7 @@ class PlayerBulletGroup extends Phaser.Group {
     // Sprite that shoots bullets
     this.sourceSprite = sourceSprite;
 
-    // Spawn a bullet fives time in a second
+    // Spawn bullets five times a second
     this.timer = this.game.time.events.loop(1000 / 5, this.spawn, this);
 
     // Spawn first bullet
